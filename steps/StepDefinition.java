@@ -61,16 +61,7 @@ public class StepDefinition {
 
 	}
 
-	//@But("Error message should be displayed")
-	//public void verifyErrorMessage() {
-		//boolean displayed = driver.findElement(By.id("errorDiv")).isDisplayed(); //true/false
-		//if(displayed) {
-			//System.out.println("Error message is displayed");
-		//} else {
-			//System.out.println("Error message is not displayed");
-		//}
-
-	//}
+	
 }
 
 
