@@ -61,7 +61,23 @@ public class StepDefinition {
 
 	}
 
+	@When("click on CRMSFA link")
+	public void clickCRMSFA() {
+		driver.findElement(By.linkText("CRM/SFA")).click();
+	}
 	
+	@Then("MyHomepage should be displayed")
+	public void verifyMyHomePage() {
+		boolean displayed = driver.findElement(By.xpath("//div[text()='My Home']")).isDisplayed();
+		if(displayed) {
+			System.out.println("MyHomepage is displayed");
+		} else {
+			System.out.println("MyHomepage is not displayed");
+		}
+		
+	}	
+	
+
 }
 
 
